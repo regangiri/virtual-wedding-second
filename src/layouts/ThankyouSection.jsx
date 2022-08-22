@@ -13,10 +13,10 @@ function ThankyouSection() {
       <div className="thankyou-text ">
         <h3 className="font-vibes text-5xl py-3 ">Welsen & Elene</h3>
         <p>
-          It will be a joy for us if you are still willing to give your blessing
+          {`It will be a joy for us if you are still willing to give your blessing
           from afar. Please know that you are in our thoughts and will be in our
           hearts, even though we are deeply sorry, we can't invite you to the
-          ceremony due to the pandemic restriction.
+          ceremony due to the pandemic restriction.`}
         </p>
 
         <p className="font-bold py-6">#Hashtag</p>
