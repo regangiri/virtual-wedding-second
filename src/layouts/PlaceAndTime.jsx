@@ -8,7 +8,8 @@ function PlaceAndTime() {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <div className="w-full max-w-xl bg-primary py-24 px-2 text-md text-center">
+    <div className="w-full max-w-xl bg-palewhite py-24  text-md text-center">
+      <div className="w-1/2 flex border-t-2 border-black py-6" />
       <h1 className="text-5xl sm:text-7xl font-vibes py-3">Place & Time</h1>
       <Accordion accordionTitle="Holy Matrimony" open={isOpen}>
         <div className="time-and-date-image-container mb-4  h-72 w-64  relative">

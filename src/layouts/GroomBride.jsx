@@ -11,7 +11,7 @@ function GroomBride() {
       </h2>
       <div className="groom-bride-image mb-4 lg:h-96 lg:w-full h-64 max-w-lg mx-auto relative">
         <Image
-          src={ImagesStock.ourmoment5}
+          src={ImagesStock.brideGroom}
           alt="Bride"
           layout="fill"
           objectFit="cover"

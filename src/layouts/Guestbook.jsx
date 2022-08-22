@@ -99,7 +99,7 @@ export default function Guestbook() {
   }, [onSubmitStatus]);
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full max-w-xl bg-[#f0ede6] py-12  ">
+    <div className="relative flex flex-col items-center justify-center w-full max-w-xl bg-primary py-12  ">
       <div className="absolute inset-0">
         {/* <div className="absolute inset-y-0 left-0 w-full bg-gray-50" /> */}
       </div>
@@ -121,9 +121,7 @@ export default function Guestbook() {
               method="POST"
               className="grid grid-cols-1 gap-y-6"
             >
-              <motion.div
-              // animate={guestbookAnimation}
-              >
+              <motion.div animate={guestbookAnimation}>
                 <label htmlFor="name" className="sr-only">
                   Full name
                 </label>
@@ -140,9 +138,7 @@ export default function Guestbook() {
                 />
               </motion.div>
 
-              <motion.div
-              //  animate={guestbookAnimation}
-              >
+              <motion.div animate={guestbookAnimation}>
                 <label htmlFor="message" className="sr-only">
                   Message
                 </label>
@@ -159,9 +155,7 @@ export default function Guestbook() {
                   defaultValue={""}
                 />
               </motion.div>
-              <motion.div
-              // animate={guestbookAnimation}
-              >
+              <motion.div animate={guestbookAnimation}>
                 <button
                   type="submit"
                   className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-palewhite bg-secondary hover:bg-transparent hover:border-secondary hover:backdrop-blur-md hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
@@ -172,14 +166,14 @@ export default function Guestbook() {
             </form>
           </div>
         </div>
-        <div className="wishes-box py-10 lg:col-span-7 lg:py-16  xl:pl-12">
-          <div className="overflow-y-scroll px-6 h-96  lg:pl-10 xl:pl-0">
+        <div className="wishes-box py-10 lg:col-span-7 lg:py-3 px-3 xl:px-6">
+          <div className="overflow-y-scroll scrollbar-hide h-96   ">
             {guestData &&
               guestData.map((guest, index) => {
                 return (
                   <motion.div
-                    // animate={messageAnimation}
-                    className="flex items-center py-4 my-3 bg-white rounded-xl px-2"
+                    animate={messageAnimation}
+                    className="flex items-center  py-4 my-3 bg-white rounded-xl px-2"
                     key={index}
                   >
                     <div className="flex-shrink-0 h-10 w-10">

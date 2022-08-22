@@ -17,14 +17,14 @@ function Gift() {
   return (
     <div className="w-full max-w-xl bg-[#f0ede6] py-12  text-md text-center">
       <div className="gift-container border-2 border-black m-12 py-20 bg-secondary rounded-2xl">
-        <h1 className="font-vibes text-7xl">Send Gift</h1>
+        <h1 className="font-vibes text-5xl md:text-7xl">Send Gift</h1>
         <p className="py-6 px-5 text-base font-sans leading-7 tracking-tighter">
           If you would like to express your kind wishes by sending us a gift,
           please use the button below:
         </p>
         <div className="gift-button flex flex-col items-center justify-center py-6">
           <button
-            className=" px-11 w-44 flex items-center justify-center font-serif font-semibold rounded-md py-2 bg-accent my-1"
+            className=" px-11 w-60 flex items-center justify-center font-serif font-semibold rounded-md py-2 bg-accent my-1"
             onClick={() => setShowModal(true)}
           >
             SEND GIFT

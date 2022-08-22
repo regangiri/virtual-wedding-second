@@ -16,26 +16,26 @@ import Rsvp from "../layouts/Rsvp";
 import ThankyouSection from "../layouts/ThankyouSection";
 
 export default function Home() {
-  // const [isLanding, setIsLanding] = useState(true);
+  const [isLanding, setIsLanding] = useState(true);
 
-  // const handleClick = () => {
-  //   setIsLanding(false);
-  // };
+  const handleClick = () => {
+    setIsLanding(false);
+  };
 
-  // if (isLanding) {
-  //   return (
-  //     <>
-  //       <Head>
-  //         <title>harwannaholdyohand</title>
-  //         <meta
-  //           name="viewport"
-  //           content="initial-scale=1.0, width=device-width"
-  //         />
-  //       </Head>
-  //       <Landing btnAction={handleClick} />
-  //     </>
-  //   );
-  // }
+  if (isLanding) {
+    return (
+      <>
+        <Head>
+          <title>Weed</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+        </Head>
+        <Landing btnAction={handleClick} />
+      </>
+    );
+  }
 
   return (
     <Layout>

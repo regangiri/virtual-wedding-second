@@ -5,14 +5,14 @@ import { Fragment, useState } from "react";
 import groomBrideImage from "../../public/assets/images/groombridedummy.jpeg";
 
 export default function Accordion(props) {
-  const { open, setOpen } = props;
+  const [open, setOpen] = useState(props.open);
   return (
     <div className="w-full px-4 pt-16">
       <div className="mx-auto w-full max-w-md rounded-2xl p-2">
-        <Disclosure>
+        <Disclosure open={open}>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between border-l-2 border-black  px-4 py-6 text-left text-sm font-medium text-black bg-[#f0ede6] shadow-secondary shadow-lg hover:bg-secondary rounded-r-md focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75">
+              <Disclosure.Button className="flex w-full justify-between   px-4 py-6 text-left text-sm font-medium text-black bg-[#f0ede6] shadow-secondary shadow-lg hover:bg-secondary rounded-md focus:outline-none focus-visible:ring  focus-visible:ring-opacity-75">
                 <span>{props.accordionTitle}</span>
                 <ChevronUpIcon
                   className={`${
@@ -34,13 +34,6 @@ export default function Accordion(props) {
                 leaveTo="transform scale-95 opacity-0"
               >
                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500 duration-500">
-                  {/* <div className="time-and-date-image-container w-24 ">
-                    <Image src={groomBrideImage} />
-                  </div>
-                  {props.accordionChild}asdasd Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Ex nostrum officiis eos
-                  laboriosam, sequi nulla corrupti reprehenderit aliquid
-                  voluptas mollitia assumenda, itaque iure ipsam dignissimos. */}
                   {props.children}
                 </Disclosure.Panel>
               </Transition>

@@ -79,23 +79,21 @@ export default function ImageGalleryV2() {
   ];
 
   return (
-    <div className="container w-full max-w-xl bg-[#f0ede6] py-24 px-2 text-md text-center ">
-      <h1 className="text-4xl text-secondary drop-shadow-sm font-semibold text-center pb-8 font-typography">
+    <div className="container w-full max-w-xl bg-primary py-24 px-2 text-md text-center ">
+      <h1 className="text-5xl text-black drop-shadow-sm font-semibold text-center pb-8 font-baskerville">
         Our Moments
       </h1>
       <div className="images-container gap-3 columns-3">
         {images.map((image, index) => {
           return (
-            // <div key={index} className="mb-4 w-96 h-96 relative">
-            //   <Image
-            //     src={image.src}
-            //     alt="src"
-            //     layout="fill"
-            //     objectFit="contain"
-            //     className="h-full w-full"
-            //   />
-            // </div>
-            <img key={index} src={image.src} className="mb-3" alt="" />
+            <img
+              key={index}
+              src={image.src}
+              className="mb-3"
+              loading="eager"
+              ismap
+              alt=""
+            />
           );
         })}
       </div>

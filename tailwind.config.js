@@ -4,12 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#6D6855",
-        secondary: "#E2B99D",
-        accent: "#B19780",
-        palewhite: "#F6F6F6",
-        choco: "#7C8996",
-        button: "#fff",
+        primary: "#C2B59B",
+        secondary: "#A97F2D",
+        accent: "#C49A6C",
+        palewhite: "#fff7E8",
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
@@ -17,8 +15,9 @@ module.exports = {
         typography: ["Dancing Script"],
         satisfy: ["Satisfy, cursive"],
         vibes: ["'Great Vibes', cursive"],
+        baskerville: [" 'Libre Baskerville', serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
